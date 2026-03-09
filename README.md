@@ -21,12 +21,3 @@ To get started with this repository:
    pip install -r requirements.txt
    ```
 3. Follow the example notebooks to train and evaluate models.
-
-## Contributing
-Contributions are welcome! Please read the [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-For inquiries, please reach out to [your.email@example.com](mailto:your.email@example.com).
