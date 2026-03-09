@@ -1,77 +1,32 @@
 # PyTorch CV Classification Lab
 
-A compact research repository with **image classification experiments in PyTorch**.
-The project focuses on transfer learning with **frozen backbones**, feature extraction, fusion heads, and ensemble-style comparison scripts.
+This repository contains a comprehensive implementation of computer vision classification techniques using PyTorch. This lab is designed to help learners understand and implement various classification models on image datasets.
 
-## What is inside
-- multiple final experiment scripts for EfficientNet, ResNet, ConvNeXt, DenseNet, MobileNet, and VGG
-- reusable training components in `experiment_template.py`
-- feature extraction pipeline in `extract_all_features.py`
-- fusion and pseudo-labeling experiments
-- seminar notebooks and auxiliary practice scripts
-- result images in `assets/`
+## Features
+- Implementations of popular classification architectures (e.g., ResNet, VGG, etc.)
+- Data preprocessing steps for image datasets
+- Training and evaluation scripts
+- Pre-trained model weights for quicker experimentation
+- Extensive documentation and example notebooks
 
-## Project structure
-```text
-.
-├── assets/                    # plots and result screenshots
-├── notebooks/                 # seminar notebooks
-├── seminars/                  # seminar practice scripts
-├── tools/                     # utility and analysis scripts
-├── competition_beater.py
-├── experiment_template.py     # shared dataset/model helpers
-├── extract_all_features.py    # offline feature extraction
-├── *_final.py                 # main experiment entry points
-├── research*.py               # research iterations
-└── requirements.txt
-```
+## Getting Started
+To get started with this repository:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/reersoti/pytorch-cv-classification-lab.git
+   cd pytorch-cv-classification-lab
+   ```
+2. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Follow the example notebooks to train and evaluate models.
 
-## Environment
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
+## Contributing
+Contributions are welcome! Please read the [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
 
-## Dataset layout
-By default, the scripts expect the dataset in `./tnn2025`.
-A typical layout is:
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-```text
-tnn2025/
-├── train.csv
-├── train/
-│   └── train_256/
-└── test/
-    └── test_256/
-```
-
-## Typical workflow
-### 1) Extract backbone features
-```bash
-python extract_all_features.py
-```
-
-### 2) Run an experiment
-Examples:
-```bash
-python efficientnet_b2_dense_final.py
-python triple_fusion_final.py
-python ultimate_fusion_final.py
-```
-
-### 3) Analyse or compare outputs
-Utility scripts are stored in `tools/`.
-
-## Notes
-- Some scripts are competition-oriented and assume a specific dataset format.
-- This repository keeps experiment files explicit instead of hiding them behind a large framework.
-- Temporary local files were removed to keep the repository clean for GitHub.
-
-## Recommended repository name
-**pytorch-cv-classification-lab**
-
-Alternative names:
-- `image-classification-experiments`
-- `frozen-backbone-cv-benchmarks`
-- `computer-vision-practice-pytorch`
+## Contact
+For inquiries, please reach out to [your.email@example.com](mailto:your.email@example.com).
