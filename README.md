@@ -34,6 +34,7 @@ The main goals of this project are:
 ├── seminars/       # seminar / practice materials
 ├── tools/          # helper scripts
 ├── assets/         # images and visual materials
+├── docs/           # experiment and dataset notes
 ├── *.py            # experiment scripts, if available
 ├── requirements.txt
 └── README.md
@@ -54,6 +55,10 @@ python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 ```
+
+## Documentation
+
+- [Experiment Guide](docs/EXPERIMENT_GUIDE.md)
 
 ## Typical Workflow
 
@@ -77,6 +82,13 @@ ls *.py
 
 Then run the selected notebook or script depending on the experiment you want to reproduce.
 
+## Recommended Result Tracking
+
+| Experiment | Model | Input Size | Epochs | Validation Accuracy | Notes |
+|---|---|---:|---:|---:|---|
+| baseline | simple CNN | 224x224 | 5 | to be measured | first comparison point |
+| transfer-learning | pretrained backbone | 224x224 | 5 | to be measured | frozen feature extractor |
+
 ## What Is Covered
 
 Depending on the experiment, the repository may include:
@@ -99,7 +111,6 @@ Depending on the experiment, the repository may include:
 ## Possible Improvements
 
 - add configuration files for experiments;
-- add a dataset preparation guide;
 - add metric logging and experiment tracking;
 - save checkpoints in a standardized structure;
 - add inference scripts;
