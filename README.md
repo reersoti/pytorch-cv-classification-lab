@@ -4,7 +4,7 @@ A practical PyTorch repository for image classification experiments, transfer le
 
 ## Overview
 
-This repository contains a set of computer vision experiments for image classification using PyTorch.  
+This repository contains a set of computer vision experiments for image classification using PyTorch.
 It serves as a practice and research workspace for studying deep learning workflows, comparing architectures, and testing different training strategies.
 
 The project includes experimental scripts, notebooks, and helper utilities that make it easier to explore:
@@ -21,10 +21,10 @@ This repository is intended as a structured experimentation environment rather t
 
 The main goals of this project are:
 
-- to gain practical experience with image classification in PyTorch
-- to compare different training approaches on the same problem
-- to organize experiments in a reproducible and understandable way
-- to better understand the full CV workflow from data to evaluation
+- to gain practical experience with image classification in PyTorch;
+- to compare different training approaches on the same problem;
+- to organize experiments in a reproducible and understandable way;
+- to better understand the full CV workflow from data preparation to evaluation.
 
 ## Repository Structure
 
@@ -34,7 +34,7 @@ The main goals of this project are:
 ├── seminars/       # seminar / practice materials
 ├── tools/          # helper scripts
 ├── assets/         # images and visual materials
-├── *.py            # experiment scripts
+├── *.py            # experiment scripts, if available
 ├── requirements.txt
 └── README.md
 ```
@@ -47,57 +47,74 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Typical Workflow
+For Windows PowerShell:
 
-1. prepare the dataset
-2. select an experiment script
-3. configure model and training settings
-4. run training
-5. evaluate metrics
-6. compare results across experiments
-
-## Example Run
-
-```bash
-python train.py
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
 ```
 
-> Adjust the command depending on the actual script used in the repository.
+## Typical Workflow
+
+1. prepare or download the dataset;
+2. open the relevant notebook or experiment script;
+3. configure model, transforms, training settings, and dataset paths;
+4. run training or feature-extraction experiments;
+5. evaluate metrics;
+6. compare results across experiments.
+
+## Running Experiments
+
+This repository is notebook- and experiment-oriented. Start by checking available notebooks and scripts:
+
+```bash
+ls notebooks
+ls seminars
+ls tools
+ls *.py
+```
+
+Then run the selected notebook or script depending on the experiment you want to reproduce.
 
 ## What Is Covered
 
 Depending on the experiment, the repository may include:
 
-- transfer learning
-- feature extraction with frozen backbones
-- classifier fine-tuning
-- ensemble-style experiments
-- validation and metric tracking
-- notebook-based exploration of results
+- transfer learning;
+- feature extraction with frozen backbones;
+- classifier fine-tuning;
+- validation and metric tracking;
+- notebook-based exploration of results;
+- comparison of different image classification approaches.
 
 ## What This Project Demonstrates
 
-- practical PyTorch usage
-- computer vision experimentation
-- organization of ML scripts and research code
-- model comparison workflows
-- hands-on work with image classification pipelines
+- practical PyTorch usage;
+- computer vision experimentation;
+- organization of ML scripts and research code;
+- model comparison workflows;
+- hands-on work with image classification pipelines.
 
 ## Possible Improvements
 
-- add configuration files for experiments
-- add dataset preparation guide
-- add metric logging and experiment tracking
-- save checkpoints in a standardized structure
-- add inference scripts
-- provide benchmark tables in the README
+- add configuration files for experiments;
+- add a dataset preparation guide;
+- add metric logging and experiment tracking;
+- save checkpoints in a standardized structure;
+- add inference scripts;
+- provide benchmark tables in the README;
+- pin dependency versions for more reproducible environments.
 
 ## Tech Stack
 
 - Python
 - PyTorch
+- TorchVision
 - Jupyter Notebook
-- common computer vision tooling
+- NumPy / Pandas
+- Matplotlib
+- scikit-learn
 
 ## Notes
 
